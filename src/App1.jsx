@@ -1,35 +1,41 @@
-import React, {useState} from 'react'
 
-const App = () => {
 
-  const [usename, setUsername] = useState('')
 
-  const submitHandler = (e) => {
-    e.preventDefault()
-    console.log("Username:", usename)
-    setUsername('')
-  }
-  return (
-    <div>
+
+// Navbar header footer
+
+// import React, {useState} from 'react'
+
+// const App = () => {
+
+//   const [usename, setUsername] = useState('')
+
+//   const submitHandler = (e) => {
+//     e.preventDefault()
+//     console.log("Username:", usename)
+//     setUsername('')
+//   }
+//   return (
+//     <div>
       
-      <form onSubmit = {submitHandler}>
-        <input
-          type="text"
-          placeholder="Enter username"
-          value={usename}
-          onChange={(e) => {
-            setUsername(e.target.value)
-          }}
-          className='px-4 rounded py-3 text-xl m-5' type ='text' placehiolder='Enter username' value={usename} onChange={(e) => {setUsername(e.target.value)}}
-        />
-        <button className='px-4 text-white py-3 text-xl font-semibold bg-emerald-600 hover:bg-emerald-600 rounded'>Submit</button>
-      </form>
+//       <form onSubmit = {submitHandler}>
+//         <input
+//           type="text"
+//           placeholder="Enter username"
+//           value={usename}
+//           onChange={(e) => {
+//             setUsername(e.target.value)
+//           }}
+//           className='px-4 rounded py-3 text-xl m-5' type ='text' placehiolder='Enter username' value={usename} onChange={(e) => {setUsername(e.target.value)}}
+//         />
+//         <button className='px-4 text-white py-3 text-xl font-semibold bg-emerald-600 hover:bg-emerald-600 rounded'>Submit</button>
+//       </form>
 
-    </div>
-  )
-}
+//     </div>
+//   )
+// }
 
-export default App
+// export default App
 
 
 
